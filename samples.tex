@@ -1,0 +1,52 @@
+
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{ТФКП, M3238-39}
+%\author{murzinanastasiia}
+\date{\today}
+
+% auto numeration as <section>.<task>
+\renewcommand*{\theenumi}{\thesection.\arabic{enumi}}
+\renewcommand{\labelenumi}{\theenumi}
+
+% additional macroses
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert} 
+\newcommand{\theIm}{\operatorname{Im}}
+\newcommand{\conj}[1]{\overline{#1}}
+
+\begin{document}
+
+\maketitle
+
+%\section*{Как находить $\frac{1}{z}$?}
+
+\section*{Как устранить разрез по отрезку в верхней полуплоскости?}
+
+Отобразить верхнюю полуплоскость с разрезом по отрезку $[a, a + ih]$ можно так: $w = \sqrt{(z-a)^2+h^2}$.
+
+\section*{Как использовать обратное преобразования для нахождения функций при устранении разреза?}
+
+Область $Imz>0, \vert z \vert >R$ на верхнюю полуплоскость переводится функцией $w=\frac{1}{2}(\frac{z}{R}+\frac{R}{z})$.
+
+\section*{Как устранять разрез внутри окружности?}
+
+Круг $\vert z \vert < r$ с разрезом по отрезку $[0, r]$ на круг $\vert w \vert < 1$ можно перевести функцией: $w=\frac{z + r + i 2\sqrt{rz}}{z + r - i 2\sqrt{rz}}$.
+
+\section*{Что о тригонометрических функциях?}
+
+Полуполосу $Im z > 0$,$ 0 < Re z < h$ на верхнюю полуплоскость переводит функция $w=-\cos \dfrac{\pi z}{h}$
+
+\section*{Что обычно идёт не так?}
+
+Часто в устранении разрезов хочется использовать не конформные функции. Следует помнить, что у некоторых функций ($z^n$, $e^z$...) есть области конформности.
+
+
+\end{document}

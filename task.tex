@@ -142,18 +142,19 @@
 \item $\frac{1}{1-z^2}, a=0$;
 \item $\frac{1}{z}, a=1$;
 \item $\frac{z}{(1-z^2)^3}, a=0$;
-\item $\int_0^z \frac{sin z}{z},a=0$;
-\item $\int_0^z e^z^2,a=0$;
 \item $f(z)=\sqrt{z+3}, a=1,f(1)=-2$;
 \item $f(z)=Arcsinz,a=0, f(0)=4\pi$.
 \end{itemize}\\
-4.8 Представить рядом Лорана по степеням $( z − a )$ и определить
+4.8 Представить рядом Лорана по степеням $(z-a)$ и определить
 область сходимости:
 \begin{itemize}
 \item $\frac{z}{(z-a)^n}, a=a$;
 \item $\frac{1}{z^2(z-b)^3}, a=0, (b=const)$;
 \item $z^3cos\frac{1}{z},a=0$;
-\item $z^5e^\frac{1}{z},a=0$.
+\item $z^5e^\frac{1}{z},a=0$;
+\item $e^zln\frac{z-\alpha}{z-\beta}, a=0, max(\vert\alpha\vert, \vert \beta \vert) < \vert z\vert < \infty$;
+\item $$;
+\item $$;
 \end{itemize}
 4.9 Разложить в ряд Фурье (рассмотреть как ряд Лорана с $\sum c_nz^n, z=e^{i\phi}$ на окружности $\vertz\vert=1$):
 \begin{itemize}
@@ -164,8 +165,26 @@
 \item $\frac{\pi-\phi}{2}$.
 \end{itemize}
 Hint. $ln\vert sin \frac{\phi}{2} \vert = Re{ln\frac{1-e^{i\phi}}{2}}$
+4.10 Найти множества точек, в которых сходятся следующие ряды Лорана:
+\begin{itemize}
+\item $\sum_{n=-\infty}^{\infty}2^{-\vertn\vert}z^n$;
+\item $\sum_{n=-\infty}^{\infty}\dfrac{z^n}{3^n+1}$;
+\item $\sum_{n=-\infty}^{\infty}\frac{(z-1)^n}{ch(\alphan)}, \alpha > 0$;
+\item $\sum_{n=-\infty}^{\infty}\frac{z^n}{n^2+1}$;
+\item $\sum_{n=-\infty}^{\infty}2^nz^n$;
+\end{itemize}
 
+4.11 Найти главную часть ряда Лорана в окрестности особой точки:
+\begin{itemize}
+\item $\frac{z}{(z+2)^2}$;
+\item $\frac{e^z+1}{e^z-1}$;
+\item $\frac{1}{sin(\piz)}$;
+\item $\sqrt{z^4+b^4}, z_0=\infty$;
+\item $z^3 arctgz, z_0=\infty$.
+\end{itemize}
 
+4.12 Доказать, что функция $f(z)$ регулярна во всей комплексной плоплоскости, за исключением конечного числа изолированных особых точек однозначного характера $z_1, z_2... z_n$ (точка $z = \infty$ не вклю-
+включается). Доказать, что $$\sum_{k=1}^n res_{z=z_k}f(z)+res_{z=\infty}f(z)=0$$
 
 \section{Интегрирование функции комплексного переменного. Вычеты}
 
@@ -185,5 +204,16 @@ Hint. $ln\vert sin \frac{\phi}{2} \vert = Re{ln\frac{1-e^{i\phi}}{2}}$
 5.3 Доказать, что если $\vert a \vert \neq R$,то $$\int_{\vert z\vert = R} \frac{\vert dz \vert}{\vert z-a\vert \vert z+a \vert} < \frac{2\piR}{\vert R^2 - \vert a\vert^2\vert}$$.
 5.4 Доказать, что "Для того чтобы изолированная особая точка $z_0$ функции $f(z)$ была существенно особой, необходимо и достаточно, чтобы главная часть лорановского разложения функции $f(z)$ в окрестности $z_0$ содержала бы бесконечное число членов: $f(z)=\sum_{n=-\infty}^{n=\infty}a_n(z-z_0)^n$".
 \end{itemize}
+5.5 Вычислить интегралы по следующим конутрам:
+\begin{itemize}
+\item $\int_{\partial D} \frac{dz}{1+z^4} (D: \vert z - 1 \vert < 1)$;
+\item $\int_{\partial D} \frac{sin z}{(z+1)^3dz}(D: x^{2/3}+y^{2/3}<2^{2/3})$;
+\item $\int_{\partial D} zsin\frac{z+1}{z-1}dz(D:\vert z \vert <2)$;
+\item $\int_{\partial D} \frac{ctgzdz}{z}(D:\vert z \vert < 1)$;
+\item $\int_{\partial D} \frac{e^{\piz}dz}{2z^2-i}(D:\vert z \vert < 1, Rez>0, Imz>0)$;
+\item $\int_{\partial D} \frac{z^2dz}{e^{2\piiz^3}-1}(D:\vert z \vert < \sqrt[3]{n+\frac{1}{2}}(n=0,1,2...))$;
+\end{itemize}
+
+
 
 \end{document}
